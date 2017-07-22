@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!-- Product id (pid) - will be DDEN - used to pass to other activity -->
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp"
+        android:elevation="12dp"
+        android:gravity="center_vertical"
+
+        android:thicknessRatio="1.9"
+
+        app:cardBackgroundColor="#fff">
+
+        <RelativeLayout
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@drawable/mycircle"
+            android:gravity="center_vertical"
+            android:layout_margin="5dp"
+            >
+
+
+
+            <TextView
+                android:id="@+id/txtnfirst"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@android:color/white"
+                android:textSize="40dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/groupimg"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/grouptxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp" />
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

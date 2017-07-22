@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <ImageView
+
+        android:id="@+id/left_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/post"/>
+
+    <TextView
+        android:layout_toRightOf="@+id/left_img"
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rohit Chugh"
+        android:layout_marginLeft="10dp"
+        />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/left_img"
+            android:layout_below="@+id/text_name"
+            android:layout_marginLeft="10dp"
+            android:text="Public"
+            />
+    
+    <EditText
+        android:id="@+id/post_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Write Something Here!"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back"
+        android:layout_below="@+id/post_text"
+        >
+
+    <ImageView
+
+        android:id="@+id/gallary_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/gallary_icon"
+        android:layout_marginLeft="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnphoto"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:text="Photo / Video"
+        android:textColor="@android:color/white"
+        android:layout_toRightOf="@+id/gallary_icon"
+
+
+
+        />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/back"
+        android:layout_below="@+id/linear1"
+
+        >
+
+        <ImageView
+
+            android:id="@+id/checkin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/gallary_icon"
+            android:layout_marginLeft="30dp"
+
+            />
+
+        <Button
+            android:id="@+id/btncheck"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="Check In"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@+id/gallary_icon"
+
+            />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

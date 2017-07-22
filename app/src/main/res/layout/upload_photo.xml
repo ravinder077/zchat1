@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    >
+
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/user"
+        android:id="@+id/imguser"
+        />
+
+    <Button
+        android:id="@+id/btntimg"
+        android:layout_margin="20dp"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:text="Take Photo"
+        />
+
+    <Button
+        android:id="@+id/btncimg"
+        android:layout_marginLeft="20dp"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:text="Choose Existing Photo"
+        />
+    <Button
+        android:id="@+id/btnctn"
+        android:layout_marginLeft="20dp"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        />
+</LinearLayout>

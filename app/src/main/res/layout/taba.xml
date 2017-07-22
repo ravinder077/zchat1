@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/back"
+        android:layout_marginTop="3dp"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgnew"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/createnew"
+                android:foregroundGravity="center"
+                android:layout_marginTop="5dp"
+                />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Create New"
+            android:layout_toRightOf="@+id/imgnew"
+            android:gravity="center_vertical"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/white"
+
+            />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_below="@+id/toolbar"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/chatcard"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="1dp"
+            >
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                tools:context="raj.cards.MainActivity">
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/dp"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:src="@drawable/dp"
+                        android:foregroundGravity="center"
+                        />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/chatclick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="3dp"
+                    >
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="215dp"
+                        android:layout_height="24dp"
+                        android:text="ZCHAT"
+                        android:clickable="true"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/lstmsg"
+                        android:layout_height="22dp"
+                        android:layout_width="wrap_content"
+                        android:text="last msg/ online/ typing /..."
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_below="@+id/name"
+                        android:layout_alignLeft="@+id/name"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="online"
+                        android:textAlignment="textEnd"
+                        android:gravity="end"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:textSize="13dp"
+                        android:layout_marginTop="11dp"
+
+
+                        />
+                    <RelativeLayout
+                        android:id="@+id/onlineicon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:minWidth="15dp"
+                        android:background="@drawable/circle"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="4dp"
+                        android:layout_below="@+id/time"
+                        android:layout_marginTop="3dp"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:id="@+id/msgcount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="786"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            android:paddingRight="5dip"
+                            android:paddingLeft="5dip"
+                            android:textSize="11dp"
+                            />
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Group Card Start Here-->
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/groupcard"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="70dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                tools:context="raj.cards.MainActivity">
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <StackView
+                        android:id="@+id/stack_view"
+                        android:layout_width="58dp"
+                        android:layout_height="58dp"
+                        android:animateLayoutChanges="true"
+                        >
+
+                    </StackView>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="3dp">
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="215dp"
+                        android:layout_height="24dp"
+                        android:text="GROUP NAME"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/lstmsg1"
+                        android:layout_height="22dp"
+                        android:layout_width="wrap_content"
+                        android:text="Last Activity shows here"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_below="@+id/name1"
+                        android:layout_alignLeft="@+id/name1"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/gnotifibell"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/notifibell"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/gnotifibell"
+                        android:layout_marginRight="5dp"
+                        android:text="555"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/greenonline"
+                        android:textSize="11dp"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <!-- Page Card Start Here-->
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/pagecard"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="75dp"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            >
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:orientation="horizontal"
+                tools:context="raj.cards.MainActivity">
+                <LinearLayout
+                    android:layout_width="75dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    >
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+
+                        >
+                        <ImageView
+                            android:id="@+id/pagedp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignLeft="@+id/pagedpoverlay"
+                            android:layout_alignRight="@+id/pagedpoverlay"
+                            android:layout_alignTop="@+id/pagedpoverlay"
+                            android:layout_alignBottom="@+id/pagedpoverlay"
+                            android:src="@drawable/groupdp1"
+                            />
+                        <ImageView
+                            android:id="@+id/pagedpoverlay"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/pagedpovelay"
+                            />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="3dp">
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="215dp"
+                        android:layout_height="24dp"
+                        android:text="PAGE NAME"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@android:color/black"
+                        />
+                    <TextView
+                        android:id="@+id/lstmsg2"
+                        android:layout_height="22dp"
+                        android:layout_width="wrap_content"
+                        android:text="About: This is a dummy page"
+                        android:textColor="@android:color/darker_gray"
+                        android:layout_below="@+id/name2"
+                        android:layout_alignLeft="@+id/name2"
+                        android:layout_marginTop="5dp"
+                        android:textSize="14dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+
+                        />
+                    <ImageView
+                        android:id="@+id/notifibell"
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/notifibell"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/notifibell"
+                        android:layout_marginRight="5dp"
+                        android:text="223"
+                        android:textStyle="bold"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/greenonline"
+                        android:textSize="11dp"
+                        />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>

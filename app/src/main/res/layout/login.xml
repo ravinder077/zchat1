@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_login">
+
+    <TextView
+        android:id="@+id/txtwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:layout_marginTop="50dp"
+       android:layout_gravity="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:textSize="50sp"
+        />
+
+
+
+    <RelativeLayout
+
+        android:layout_width="300dp"
+        android:layout_height="170dp"
+        android:background="@drawable/mobile_back"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center">
+
+
+         <EditText
+
+            android:id="@+id/etmob"
+            android:background="@android:color/holo_blue_dark"
+            android:inputType="number"
+            android:textColor="@android:color/white"
+            android:hint="Enter Mobile Number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColorHint="@android:color/white"
+            android:layout_margin="30dp"
+            android:gravity="center"
+            />
+
+
+        <Button
+            android:id="@+id/btnsotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etmob"
+            android:text="Send OTP"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>
